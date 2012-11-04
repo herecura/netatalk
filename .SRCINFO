@@ -1,42 +1,23 @@
 pkgbase = netatalk
-	pkgdesc = A kernel level implementation of the AppleTalk Protocol Suite
-	pkgver = 2.2.2
-	pkgrel = 1
+	pkgdesc = A kernel-level implementation of AFP services
+	pkgver = 3.0.1
+	pkgrel = 3
 	url = http://netatalk.sourceforge.net
 	install = netatalk.install
+	changelog = netatalk.changelog
 	arch = i686
 	arch = x86_64
 	license = GPL
-	makedepends = make
-	makedepends = patch
-	makedepends = gcc
-	depends = libcups
-	depends = pam
-	depends = coreutils>=7.1-2
-	depends = db
-	optdepends = avahi
-	optdepends = tcp_wrappers
-	optdepends = openssl
-	optdepends = libgcrypt
+	depends = avahi>=0.6
+	depends = libldap
+	depends = libgcrypt>=1.2.3
+	depends = libevent
+	replaces = netatalk-git
+	replaces = netatalk2
 	options = !libtool
-	backup = etc/netatalk/afpd.conf
-	backup = etc/netatalk/netatalk.conf
-	backup = etc/netatalk/atalkd.conf
-	backup = etc/netatalk/papd.conf
-	backup = etc/netatalk/AppleVolumes.default
-	backup = etc/netatalk/AppleVolumes.system
-	source = http://downloads.sourceforge.net/project/netatalk/netatalk/2.2.2/netatalk-2.2.2.tar.bz2
-	source = afpd
-	source = atalkd
-	source = papd
-	source = cnid
-	source = afpd.service
-	md5sums = bd42b686ec7209d9ab47bd8e2e2431c4
-	md5sums = 16ab9fa50ec4abde6de478fc7de57805
-	md5sums = 2d05de4a16faf7d4af21b5f14e33fa82
-	md5sums = b16a687c96dd1ca7ffefd7c995356c0d
-	md5sums = e21ef8051269583764e68d00683691bb
-	md5sums = 9b6b2fee54fe052bba0c69f00d335bdb
+	backup = etc/afp.conf
+	source = http://iweb.dl.sourceforge.net/project/netatalk/netatalk/3.0.1/netatalk-3.0.1.tar.bz2
+	md5sums = b4f5c932b2ca99f5292bd6b6d69b3ebc
 
 pkgname = netatalk
 
