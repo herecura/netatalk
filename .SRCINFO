@@ -1,6 +1,6 @@
 pkgbase = netatalk
 	pkgdesc = A kernel-level implementation of AFP services
-	pkgver = 3.1.4
+	pkgver = 3.1.5
 	pkgrel = 1
 	url = http://netatalk.sourceforge.net
 	install = netatalk.install
@@ -19,8 +19,8 @@ pkgbase = netatalk
 	options = !libtool
 	backup = etc/afp.conf
 	backup = etc/extmap.conf
-	source = http://downloads.sourceforge.net/project/netatalk/netatalk/3.1.4/netatalk-3.1.4.tar.bz2
-	sha256sums = cac45e24110507d39ac001c73e55835b06c0adc38a82007b53764a6751b2774b
+	source = http://downloads.sourceforge.net/project/netatalk/netatalk/3.1.5/netatalk-3.1.5.tar.bz2
+	sha256sums = 7ea2f32c990f3889503f35b2ccf9373fe027857c6a8ce40f857b1738832f2f00
 
 pkgname = netatalk
 
