@@ -6,7 +6,7 @@
 
 pkgname=netatalk
 pkgver=3.1.7
-pkgrel=1
+pkgrel=2
 pkgdesc='A kernel-level implementation of AFP services'
 arch=('i686' 'x86_64')
 url='http://netatalk.sourceforge.net'
@@ -19,7 +19,7 @@ options=('!libtool')
 install=$pkgname.install
 changelog=$pkgname.changelog
 source=("http://downloads.sourceforge.net/project/$pkgname/$pkgname/$pkgver/$pkgname-$pkgver.tar.bz2")
-
+sha256sums=('e4049399e4e7d477f843a9ec4bd64f70eb7c7af946e890311140fd8fbd4bc071')
 
 build() {
 	cd $pkgname-$pkgver
@@ -37,4 +37,3 @@ package() {
 	make DESTDIR="$pkgdir" install
 }
 
-sha256sums=('e4049399e4e7d477f843a9ec4bd64f70eb7c7af946e890311140fd8fbd4bc071')

@@ -1,7 +1,7 @@
 pkgbase = netatalk
 	pkgdesc = A kernel-level implementation of AFP services
 	pkgver = 3.1.7
-	pkgrel = 1
+	pkgrel = 2
 	url = http://netatalk.sourceforge.net
 	install = netatalk.install
 	changelog = netatalk.changelog
