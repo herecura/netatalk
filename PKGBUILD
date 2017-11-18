@@ -8,7 +8,7 @@ pkgname=netatalk
 pkgver=3.1.11
 pkgrel=1
 pkgdesc='A kernel-level implementation of AFP services'
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url='http://netatalk.sourceforge.net'
 license=('GPL')
 depends=('avahi>=0.6' 'libldap' 'libgcrypt>=1.2.3' 'libevent' 'python' 'dbus-glib')
