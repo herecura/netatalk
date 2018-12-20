@@ -5,7 +5,7 @@
 # Contributor: Farhan Yousaf <farhany at xaviya dot com>
 
 pkgname=netatalk
-pkgver=3.1.11
+pkgver=3.1.12
 pkgrel=1
 pkgdesc='A kernel-level implementation of AFP services'
 arch=('x86_64')
@@ -19,7 +19,7 @@ options=('!libtool')
 install=$pkgname.install
 changelog=$pkgname.changelog
 source=("http://downloads.sourceforge.net/project/$pkgname/$pkgname/$pkgver/$pkgname-$pkgver.tar.bz2")
-sha256sums=('3434472ba96d3bbe3b024274438daad83b784ced720f7662a4c1d0a1078799a6')
+sha256sums=('1560f83a3da41be97e0b70a96e2402159b8ddc631d38538360b14784beada5d1')
 
 build() {
 	cd $pkgname-$pkgver
